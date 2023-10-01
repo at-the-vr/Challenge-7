@@ -4,10 +4,37 @@ string navLink:
 
 -- ftd.text: $theNavLink.navTitle
 style: underline,bold
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 link: $theNavLink.navLink
-color: #d9d9d9
-
--- end: ftd.text
+color: #D9D9D9
 
 -- end: theNavLink
+
+-- component theLinkSeparator:
+
+-- ftd.text: --
+role: $inherited.types.copy-regular
+color: #D9D9D9
+
+-- end: theLinkSeparator
+
+-- component theProjectLinks:
+string projectTitle:
+string projectLink:
+
+-- ftd.container:
+
+-- ftd.text: --
+color: white
+display: inline
+
+-- ftd.text: $theProjectLinks.projectTitle
+role: $inherited.types.copy-large
+color: #CB51AB
+link: $theProjectLinks.projectLink
+style: underline
+margin-left.px: 5
+
+-- end: ftd.container
+
+-- end: theProjectLinks
