@@ -1,9 +1,13 @@
 -- import: at-the-vr.github.io/challenge-7/lib
+-- import: fastn-community.github.io/roboto-mono-typography
 
 -- ftd.column:
 width: fill-container
 height: fill-container
 background.solid: #141414
+types: $roboto-mono-typography.types
+
+;; Navigation Area
 
 -- ftd.row:
 width: fill-container
@@ -14,61 +18,156 @@ padding-vertical.px: 20
 navTitle: Home
 navLink: index.html
 
--- ftd.text: --
-role: $inherited.types.copy-regular
-color: #d9d9d9
+-- lib.theLinkSeparator:
 
 -- lib.theNavLink: 
 navTitle: Blog
 navLink: index.html
 
--- ftd.text: --
-role: $inherited.types.copy-regular
-color: #d9d9d9
+-- lib.theLinkSeparator:
 
 -- lib.theNavLink: 
 navTitle: Contact
 navLink: index.html
 
--- ftd.text: --
-role: $inherited.types.copy-regular
-color: #d9d9d9
+-- lib.theLinkSeparator:
 
 -- lib.theNavLink: 
 navTitle: Resume
 navLink: index.html
 
--- ftd.text: --
-role: $inherited.types.copy-regular
-color: #d9d9d9
+-- lib.theLinkSeparator:
 
 -- lib.theNavLink: 
 navTitle: Talks
 navLink: index.html
 
--- ftd.text: --
-role: $inherited.types.copy-regular
-color: #d9d9d9
+-- lib.theLinkSeparator:
 
 -- lib.theNavLink: 
 navTitle: About
 navLink: index.html
 
--- ftd.text: --
-role: $inherited.types.copy-regular
-color: #d9d9d9
+-- lib.theLinkSeparator:
 
 -- lib.theNavLink: 
 navTitle: Essays
 navLink: index.html
 
--- ftd.text: --
-role: $inherited.types.copy-regular
-color: #d9d9d9
+-- lib.theLinkSeparator:
 
 -- lib.theNavLink: 
 navTitle: Documentation
 navLink: index.html
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+spacing: space-evenly
+padding-vertical.px: 20
+
+-- ftd.column:
+width: fill-container
+padding-left.px: 230 
+
+-- ftd.image:
+src: $assets.files.assets.profile_pic.jpg
+width.fixed.px: 500
+height.fixed.px: 550
+
+
+-- ftd.text: Contact Me
+style: underline,bold
+role: $inherited.types.copy-large
+color: #D9D9D9
+margin-vertical.px: 10 
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: John Doe
+style: underline, bold
+role: $inherited.types.heading-large
+link: index.html
+color: #E7D05B
+align-self: start
+padding-bottom.px: 20 
+
+
+-- ftd.text: \### Skills
+style: bold
+role: $inherited.types.heading-small
+color: #E7D05B
+padding-bottom.px: 15
+
+-- ftd.text: - Go, Lua, Haskell, C, Rust and other languages
+role: $inherited.types.copy-large
+color: #C1E0C4
+
+-- ftd.text: - Docker (deployment, development & more)
+role: $inherited.types.copy-large
+color: #C1E0C4
+
+-- ftd.text: - Mashups of data
+role: $inherited.types.copy-large
+color: #C1E0C4
+
+-- ftd.text: - Kubernetes
+role: $inherited.types.copy-large
+color: #C1E0C4
+
+;; Projects Section
+
+-- ftd.text: \#### Highlighted Projects
+style: bold
+role: $inherited.types.heading-small
+color: #E7D05B
+padding-top.px: 20
+padding-bottom.px: 15
+
+-- lib.theProjectLinks:
+projectTitle: Personal Portfolio
+projectLink: index.html
+
+-- lib.theProjectLinks:
+projectTitle: Social Media
+projectLink: index.html
+
+-- lib.theProjectLinks:
+projectTitle: Shopping App
+projectLink: index.html
+
+-- lib.theProjectLinks:
+projectTitle: Game App
+projectLink: index.html
+
+-- lib.theProjectLinks:
+projectTitle: E-commerce Website
+projectLink: index.html
+
+-- lib.theProjectLinks:
+projectTitle: Tic Tac Toe
+projectLink: index.html
+
+-- ftd.text: \#### Quick Links
+style: bold
+role: $inherited.types.heading-small
+color: #DDDDDD
+padding-top.px: 20
+padding-bottom.px: 15
+
+-- lib.theProjectLinks:
+projectTitle: Github
+projectLink: index.html
+
+-- lib.theProjectLinks:
+projectTitle: LinkedIn
+projectLink: index.html
+
+-- end: ftd.column
 
 -- end: ftd.row
 
