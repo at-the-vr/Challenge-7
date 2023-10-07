@@ -6,9 +6,18 @@ string navLink:
 style: underline,bold
 role: $inherited.types.copy-large
 link: $theNavLink.navLink
-color: #D9D9D9
+color: $theNavLinks-chrome
 
 -- end: theNavLink
+
+
+
+
+
+
+
+
+
 
 -- component theLinkSeparator:
 
@@ -30,7 +39,7 @@ display: inline
 
 -- ftd.text: $theProjectLinks.projectTitle
 role: $inherited.types.copy-large
-color: #CB51AB
+color: $theProjectLinks-chrome
 link: $theProjectLinks.projectLink
 style: underline
 margin-left.px: 5
@@ -38,3 +47,20 @@ margin-left.px: 5
 -- end: ftd.container
 
 -- end: theProjectLinks
+
+
+
+
+
+
+
+
+;; color-scheme
+
+-- ftd.color theNavLinks-chrome:
+light: #D9D9D9
+dark: #D9D9D9
+
+-- ftd.color theProjectLinks-chrome:
+light: #363CA0
+dark: #CB51AB
