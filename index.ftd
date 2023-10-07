@@ -4,7 +4,7 @@
 -- ftd.column:
 width: fill-container
 height: fill-container
-background.solid: #141414
+background.solid: $monochrome-light
 types: $roboto-mono-typography.types
 
 ;; Navigation Area
@@ -92,7 +92,7 @@ width: fill-container
 style: underline, bold
 role: $inherited.types.heading-large
 link: index.html
-color: #E7D05B
+color: $headings-chrome
 align-self: start
 padding-bottom.px: 20 
 
@@ -100,31 +100,31 @@ padding-bottom.px: 20
 -- ftd.text: \### Skills
 style: bold
 role: $inherited.types.heading-small
-color: #E7D05B
+color: $headings-chrome
 padding-bottom.px: 15
 
 -- ftd.text: - Go, Lua, Haskell, C, Rust and other languages
 role: $inherited.types.copy-large
-color: #C1E0C4
+color: $bullet-skills-chrome
 
 -- ftd.text: - Docker (deployment, development & more)
 role: $inherited.types.copy-large
-color: #C1E0C4
+color: $bullet-skills-chrome
 
 -- ftd.text: - Mashups of data
 role: $inherited.types.copy-large
-color: #C1E0C4
+color: $bullet-skills-chrome
 
 -- ftd.text: - Kubernetes
 role: $inherited.types.copy-large
-color: #C1E0C4
+color: $bullet-skills-chrome
 
 ;; Projects Section
 
 -- ftd.text: \#### Highlighted Projects
 style: bold
 role: $inherited.types.heading-small
-color: #E7D05B
+color: $headings-chrome
 padding-top.px: 20
 padding-bottom.px: 15
 
@@ -155,7 +155,7 @@ projectLink: index.html
 -- ftd.text: \#### Quick Links
 style: bold
 role: $inherited.types.heading-small
-color: #DDDDDD
+color: $headings-chrome
 padding-top.px: 20
 padding-bottom.px: 15
 
@@ -173,3 +173,29 @@ projectLink: index.html
 
 
 -- end: ftd.column
+
+
+
+
+
+
+
+
+
+;; color-scheme
+
+-- ftd.color monochrome-dark:
+light: #FFFFFF
+dark: #D34283
+
+-- ftd.color monochrome-light:
+light: #009999
+dark: #29132E
+
+-- ftd.color headings-chrome:
+light: #CE0000
+dark: #E7D05B
+
+-- ftd.color bullet-skills-chrome:
+light: #374B5A
+dark: #C1E0C4
